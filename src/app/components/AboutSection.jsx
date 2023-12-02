@@ -12,6 +12,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Javascript</li>
         <li>Node.js</li>
+        <li>Mysql</li>
         <li>Express</li>
         <li>Sequelize</li>
         <li>React.js</li>
@@ -23,10 +24,12 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Full stack Developemnt</li>
-        <li>University Serang Raya</li>
-      </ul>
+      <ol className="list-disc pl-2">
+        <li className="font-bold">
+          University Serang Raya <span className="font-normal">(2022)</span>
+        </li>
+        <div className="text-gray-200">Bachelor of Chemical Engineering</div>
+      </ol>
     ),
   },
   {
@@ -52,7 +55,10 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
+    <section
+      className="text-white"
+      id="about"
+    >
       {/* md:grid-cols-2 = menjadi 2 column */}
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Images
@@ -65,8 +71,8 @@ const AboutSection = () => {
           <p className="text-base  lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
+            working with JavaScript, React, Tailwind, Redux, Node.js, Express,
+            Mysql, Sequelize, and Git. I am a quick learner and I am always
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>

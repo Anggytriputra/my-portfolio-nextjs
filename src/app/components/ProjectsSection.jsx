@@ -29,7 +29,8 @@ const projectData = [
   {
     id: 3,
     title: "Quantum Nusatama Asset Web App",
-    description: "Pro",
+    description:
+      "The QN Asset App is designed to monitor all assets across Quantum Nusatama branches. The central branch has the ability to add new assets, while branches can initiate asset returns to the central branch. The return status is categorized into four statuses: bad, good, service, and project completed. Additionally, the app supports asset transfers, allowing either branches or the central branch to transfer assets to a designated branch if the assets are needed there.",
     image: "/images/projects/qn_asset.png",
     url_repositori: "https://github.com/Anggytriputra/qn_assets",
     tag: ["All", "Web Development"],
@@ -55,7 +56,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section>
+    <section id="projects">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
