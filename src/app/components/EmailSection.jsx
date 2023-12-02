@@ -16,7 +16,6 @@ const EmailSection = () => {
       message: e.target.message.value,
     };
 
-    console.log("data adalah", data);
     const JSONdata = JSON.stringify(data);
     const endpoint = "/api/send";
 
@@ -33,7 +32,7 @@ const EmailSection = () => {
     };
 
     const response = await fetch(endpoint, options);
-    console.log("resdata", response);
+
     const resData = await response.json();
     if (response.status === 200) {
       setEmailSubmited(true);
@@ -49,7 +48,6 @@ const EmailSection = () => {
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          {" "}
           I'm currently looking for new oppurtinities, my inbox is always open.
           Whether you have a question or just want to say hi, I'll try my best
           to get back to you!
